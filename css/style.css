@@ -5201,7 +5201,7 @@ nav ul li ul.dropdown-content {
 }
 
 .visa-sample {
-	background: url(../images/dubai-visa-copy.jpg);
+	background: url("../images/dubai-visa-copy.jpg");
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -5685,6 +5685,7 @@ ol.ser li {
     gap: 6px;
     align-items: center;
     justify-content: center;
+    padding: 13px 0;
 }
 .fast-time p{
         font-size:13px !important;
