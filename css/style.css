@@ -1,513 +1,121 @@
-/** @format */
-
-@charset "utf-8";
-
-/*! jQuery UI - v1.10.3 - 2013-05-29
-* http://jqueryui.com
-* Includes: jquery.ui.core.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Arial%2Csans-serif&fwDefault=normal&fsDefault=12px&cornerRadius=4px&bgColorHeader=%23960606&bgTextureHeader=flat&bgImgOpacityHeader=100&borderColorHeader=%23960606&fcHeader=%23ffffff&iconColorHeader=%23ffffff&bgColorContent=%23F8F8F8&bgTextureContent=flat&bgImgOpacityContent=100&borderColorContent=%23ccc&fcContent=%23525252&iconColorContent=%23525252&bgColorDefault=%23ebebeb&bgTextureDefault=highlight_hard&bgImgOpacityDefault=75&borderColorDefault=%23ccc&fcDefault=%23960606&iconColorDefault=%23960606&bgColorHover=%23ffda88&bgTextureHover=highlight_soft&bgImgOpacityHover=75&borderColorHover=%23ffc23a&fcHover=%23960606&iconColorHover=%23960606&bgColorActive=%23ff0000&bgTextureActive=flat&bgImgOpacityActive=100&borderColorActive=%23960606&fcActive=%23ffffff&iconColorActive=%23ffffff&bgColorHighlight=%23ff0000&bgTextureHighlight=flat&bgImgOpacityHighlight=100&borderColorHighlight=%23960606&fcHighlight=%23ffffff&iconColorHighlight=%23ffffff&bgColorError=%23fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=%23cd0a0a&fcError=%23cd0a0a&iconColorError=%23cd0a0a&bgColorOverlay=%23aaaaaa&bgTextureOverlay=diagonals_small&bgImgOpacityOverlay=100&opacityOverlay=50&bgColorShadow=%23aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=0&thicknessShadow=0&offsetTopShadow=0&offsetLeftShadow=0&cornerRadiusShadow=0
-* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
-
 /*ATO Calander----Traveler Claender Starts*/
-.ui-datepicker {
-	padding: 10px 8px 4px;
-	border: 3px solid #c5c5c5;
-	z-index: 100 !important;
-	background: #fff;
-}
-
-.ui-datepicker .ui-datepicker-group {
-	width: 49.9%;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header {
-	color: #0068b4;
-	font-size: 16px;
-	background: #f8f8f8 !important;
-	border-color: #f8f8f8 !important;
-	border-bottom: 1px solid #ccc !important;
-	padding-bottom: 10px;
-	font-weight: normal;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar {
-	margin-top: 15px;
-}
-
-.ui-datepicker .ui-datepicker-group-first,
-.ui-datepicker .ui-datepicker-group-middle {
-	border-right: 1px solid #5da845;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-default {
-	background: none;
-	border: none;
-	width: 47px;
-	display: block;
-	padding: 7px 0px 0px 0px !important;
-	text-align: center;
-	height: 40px;
-	font-size: 14px !important;
-	color: #717171 !important;
-	font-weight: bold !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-focus,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-active,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-active,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-highlight,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-focus {
-	background: #445e93 !important;
-	text-align: center !important;
-	color: #fff !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-hover,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-hover {
-	background: #6b87c7 !important;
-	text-align: center !important;
-	color: #fff !important;
-}
-
-/*.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end {color:#960606}*/
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-default {
-	background: none;
-	border: none;
-	padding: 3px 7px;
-	text-align: center;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled {
-	background: none;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled .ui-icon-circle-triangle-w {
-	background: url(../images/calendar-arrow.png) no-repeat;
-	background-position: 0px -1px;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled .ui-icon-circle-triangle-e {
-	background: url(../images/calendar-arrow.png) no-repeat;
-	background-position: -70px -1px;
-}
-
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {
-	margin: 0 !important;
-	left: 5px !important;
-	top: 5px !important;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-icon {
-	width: 18px !important;
-	height: 33px !important;
-}
-
-.ui-datepicker .ui-datepicker-prev-hover {
-	background: none !important;
-	border: none !important;
-}
-
-.ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {
-	margin: 0 !important;
-	left: 5px !important;
-	top: 5px !important;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.ui-datepicker .ui-datepicker-next span,
-.ui-datepicker .ui-icon {
-	width: 13px !important;
-	height: 23px !important;
-}
-
-.ui-datepicker .ui-datepicker-next-hover {
-	background: none !important;
-	border: none !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-datepicker-prev .ui-icon-circle-triangle-w {
-	background: url(../images/calendar-arrow.png) no-repeat;
-	background-position: 0px -1px;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-datepicker-next .ui-icon-circle-triangle-e {
-	background: url(../images/calendar-arrow.png) no-repeat;
-	background-position: -105px -1px;
-}
-
-.ui-datepicker td span,
-.ui-datepicker td a span {
-	text-align: center !important;
-	font-size: 11px !important;
-	padding: 3px 0 0 0 !important;
-	letter-spacing: 1px;
-	color: #919191;
-	font-weight: normal !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-default span {
-	color: #919191 !important;
-	font-size: 11px !important;
-	letter-spacing: 1px;
-	font-weight: normal !important;
-}
-
-.ui-datepicker table {
-	font-size: 14px !important;
-	font-weight: bold !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-hover span,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-hover span {
-	color: #fff !important;
-}
-
-.ui-datepicker td {
-	border: 1px solid #e4e8eb !important;
-	padding: 0px !important;
-}
-
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-focus,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight span,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-active,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-active,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-highlight,
-.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-focus span {
-	color: #fff !important;
-}
-
-.low-airfare {
-	color: #2fa20b;
-}
-
-.ui-datepicker-calendar td a.fc-lowestFare[data-custom]::after {
-	color: #2fa20b;
-}
-
-.ui-datepicker-calendar td a[data-custom] {
-	position: relative;
-	padding-bottom: 10px;
-}
-
-.ui-datepicker-calendar td a[data-custom]::after {
-	content: attr(data-custom);
-	display: block;
-	font-size: 11px;
-	letter-spacing: 1px;
-	color: #919191;
-	font-weight: normal !important;
-}
-
-.ui-datepicker-calendar td a.ui-state-hover[data-custom]::after {
-	content: attr(data-custom);
-	display: block;
-	color: #fff;
-}
-
-.ui-datepicker-calendar td a.ui-state-highlight[data-custom]::after {
-	content: attr(data-custom);
-	display: block;
-	color: #fff;
-}
+.ui-datepicker{padding:10px 8px 4px;border:3px solid #c5c5c5;z-index:100!important;background:#fff}
+.ui-datepicker .ui-datepicker-group{width:49.9%}
+.ui-datepicker .ui-datepicker-group .ui-widget-header{color:#0068b4;font-size:16px;background:#f8f8f8!important;border-color:#f8f8f8!important;border-bottom:1px solid #ccc!important;padding-bottom:10px;font-weight:400}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar{margin-top:15px}
+.ui-datepicker .ui-datepicker-group-first,.ui-datepicker .ui-datepicker-group-middle{border-right:1px solid #5da845}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-default{background:none;border:none;width:47px;display:block;padding:7px 0 0!important;text-align:center;height:40px;font-size:14px!important;color:#717171!important;font-weight:700!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-focus,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-active,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-active,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-highlight,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-focus{background:#445e93!important;text-align:center!important;color:#fff!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-hover,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-hover{background:#6b87c7!important;text-align:center!important;color:#fff!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-default{background:none;border:none;padding:3px 7px;text-align:center}
+.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled{background:none}
+.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled .ui-icon-circle-triangle-w{background:url(../images/calendar-arrow.png) no-repeat;background-position:0 -1px}
+.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-state-disabled .ui-icon-circle-triangle-e{background:url(../images/calendar-arrow.png) no-repeat;background-position:-70px -1px}
+.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span{margin:0!important;left:5px!important;top:5px!important;background:none;border:none;cursor:pointer}
+.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-icon{width:18px!important;height:33px!important}
+.ui-datepicker .ui-datepicker-prev-hover{background:none!important;border:none!important}
+.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span{margin:0!important;left:5px!important;top:5px!important;background:none;border:none;cursor:pointer}
+.ui-datepicker .ui-datepicker-next span,.ui-datepicker .ui-icon{width:13px!important;height:23px!important}
+.ui-datepicker .ui-datepicker-next-hover{background:none!important;border:none!important}
+.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-datepicker-prev .ui-icon-circle-triangle-w{background:url(../images/calendar-arrow.png) no-repeat;background-position:0 -1px}
+.ui-datepicker .ui-datepicker-group .ui-widget-header .ui-datepicker-next .ui-icon-circle-triangle-e{background:url(../images/calendar-arrow.png) no-repeat;background-position:-105px -1px}
+.ui-datepicker td span,.ui-datepicker td a span{text-align:center!important;font-size:11px!important;padding:3px 0 0!important;letter-spacing:1px;color:#919191;font-weight:400!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-default span{color:#919191!important;font-size:11px!important;letter-spacing:1px;font-weight:400!important}
+.ui-datepicker table{font-size:14px!important;font-weight:700!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-hover span,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-hover span{color:#fff!important}
+.ui-datepicker td{border:1px solid #e4e8eb!important;padding:0!important}
+.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-focus,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-highlight span,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-state-active,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-active,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-highlight,.ui-datepicker .ui-datepicker-group .ui-datepicker-calendar .ui-datepicker-week-end .ui-state-focus span{color:#fff!important}
+.low-airfare{color:#2fa20b}
+.ui-datepicker-calendar td a.fc-lowestFare[data-custom]::after{color:#2fa20b}
+.ui-datepicker-calendar td a[data-custom]{position:relative;padding-bottom:10px}
+.ui-datepicker-calendar td a[data-custom]::after{content:attr(data-custom);display:block;font-size:11px;letter-spacing:1px;color:#919191;font-weight:400!important}
+.ui-datepicker-calendar td a.ui-state-hover[data-custom]::after{content:attr(data-custom);display:block;color:#fff}
+.ui-datepicker-calendar td a.ui-state-highlight[data-custom]::after{content:attr(data-custom);display:block;color:#fff}
 
 /*ATO Calander----Traveler Claender Ends*/
 
 /* CSS Document */
 
-*,
-:after,
-:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box !important;
-}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box!important}
+body{font-family:'Work Sans',sans-serif!important;font-size:14px}
+.visa-sprite{background:url(../images/visa-sprite.png) no-repeat}
+.akb-pdng{padding:20px 0!important}
+.akb-mrg-btm{margin-bottom:0!important}
+.akb-relative{position:relative}
+.akb-bg-none{background:none}
+.akb-pdg-none{padding:0!important}
+.akb-pdg-top-none{padding-top:0!important}
+.akb-pdg-left-none{padding-left:0!important}
+.akb-pdg-right-none{padding-right:0!important}
+.akb-mrg-none{margin:0!important}
+.no-margin-bottom{margin-bottom:0!important}
+.akb-round{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 
-body {
-	font-family: 'Work Sans', sans-serif !important;
-	font-size: 14px;
-}
-
-.visa-sprite {
-	background: url(../images/visa-sprite.png) no-repeat;
-}
-
-.akb-pdng {
-	padding: 20px 0 !important;
-}
-
-.akb-mrg-btm {
-	margin-bottom: 0 !important;
-}
-
-.akb-relative {
-	position: relative;
-}
-
-.akb-bg-none {
-	background: none;
-}
-
-.akb-pdg-none {
-	padding: 0 !important;
-}
-
-.akb-pdg-top-none {
-	padding-top: 0 !important;
-}
-
-.akb-pdg-left-none {
-	padding-left: 0 !important;
-}
-
-.akb-pdg-right-none {
-	padding-right: 0 !important;
-}
-
-.akb-mrg-none {
-	margin: 0 !important;
-}
-
-.no-margin-bottom {
-	margin-bottom: 0px !important;
-}
-
-.akb-round {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
 
 /*Button Style*/
 
-.akb-btn {
-	background: #406cb5;
-	color: #fff;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 15px;
-	border-radius: 25px;
-	background: linear-gradient(225.06deg, #3d7bd8 0%, #445e93 100%);
-	box-shadow: 0 2px 4px 0 #c4d5f6;
-	height: auto !important;
-	padding: 6px 30px !important;
-	line-height: 39px !important;
-}
-
-.akb-btn-sec {
-	border: 1px solid #445e93;
-	border-radius: 25px;
-	background: #ffffff;
-	box-shadow: 0 2px 4px 0 #c4d5f6;
-	color: #445e93;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 15px;
-	text-decoration: none;
-	text-align: center;
-	padding: 6px 30px !important;
-	line-height: 39px !important;
-	height: auto !important;
-}
-
-.akb-btn-sec:hover {
-	color: #b8336a !important;
-	border-color: #b8336a !important;
-	background: #fff !important;
-}
+.akb-btn{background:#406cb5;color:#fff;font-weight:700;text-transform:uppercase;font-size:15px;border-radius:25px;background:linear-gradient(225.06deg,#3d7bd8 0%,#445e93 100%);box-shadow:0 2px 4px 0 #c4d5f6;height:auto!important;padding:6px 30px!important;line-height:39px!important}
+.akb-btn-sec{border:1px solid #445e93;border-radius:25px;background:#fff;box-shadow:0 2px 4px 0 #c4d5f6;color:#445e93;font-weight:700;text-transform:uppercase;font-size:15px;text-decoration:none;text-align:center;padding:6px 30px!important;line-height:39px!important;height:auto!important}
+.akb-btn-sec:hover{color:#b8336a!important;border-color:#b8336a!important;background:#fff!important}
 
 /*Button Style END*/
 
-.akb-gray-bg {
-	background: #eceef4;
-}
-
-.akb-section-style {
-	padding: 30px 0;
-}
-
-.top-faq {
-	padding-bottom: 5px;
-}
-
-.bot-faq {
-	padding-top: 0;
-}
-
-.mb-10 {
-	margin-bottom: 10px;
-}
-
-.mb-0 {
-	margin-bottom: 0px !important;
-}
-
-.font14 {
-	font-size: 14px;
-}
-
-h2 {
-	font-size: 20px;
-	color: #000;
-	font-weight: 600;
-}
-
-h4 {
-	font-size: 16px;
-	color: #000;
-	font-weight: 600;
-}
-
-p {
-	font-size: 14px !important;
-}
+.akb-gray-bg{background:#eceef4}
+.akb-section-style{padding:30px 0}
+.top-faq{padding-bottom:5px}
+.bot-faq{padding-top:0}
+.mb-10{margin-bottom:10px}
+.mb-0{margin-bottom:0!important}
+.font14{font-size:14px}
+h2{font-size:20px;color:#000;font-weight:600}
+h4{font-size:16px;color:#000;font-weight:600}
+p{font-size:14px!important}
 
 /*Visa steps*/
 
-.round-box {
-	display: block;
-	background: #fff;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin: 10px auto;
-	z-index: 5;
-	position: relative;
-}
-
-.center-bar {
-	width: 100%;
-	float: left;
-	height: 6px;
-	background: #fed9a2;
-}
-
-.center-bar-position {
-	margin-top: -23px;
-}
+.round-box{display:block;background:#fff;width:20px;height:20px;border-radius:50%;margin:10px auto;z-index:5;position:relative}
+.center-bar{width:100%;float:left;height:6px;background:#fed9a2}
+.center-bar-position{margin-top:-23px}
 
 /*Visa steps End*/
 
 /*materializ css overight*/
 
-.container {
-	margin: 0 auto;
-	max-width: 1280px !important;
-	min-width: 300px;
-	width: 100%;
-}
-
+.container{margin:0 auto;max-width:1280px!important;min-width:300px;width:100%}
 @media only screen and (min-width: 601px) {
-	.container {
-		width: 100% !important;
-	}
+.container{width:100%!important}
 }
-
 @media only screen and (min-width: 993px) {
-	.container {
-		width: 100% !important;
-	}
+.container{width:100%!important}
 }
-
-.mtop15 {
-	margin-top: 15px;
-}
-
-.list-style {
-	margin-left: 15px;
-}
-
-.list-style li {
-	list-style: circle !important;
-	font-size: 14px;
-	padding-bottom: 8px;
-}
+.mtop15{margin-top:15px}
+.list-style{margin-left:15px}
+.list-style li{list-style:circle!important;font-size:14px;padding-bottom:8px}
 
 /*head top*/
 
-.head-top {
-	background: #445d93;
-	font-size: 14px;
-	padding: 5px 0;
-    line-height: 1.5;
-}
-
-.head-top b {
-	font-size: 18px;
-}
+.head-top{background:#445d93;font-size:14px;padding:5px 0;line-height:1.5}
+.head-top b{font-size:18px}
 
 /*navigation*/
-.akb-l-logo {
-	display: flex;
-	width: 300px;
-}
-
-.akb-l-logo img {
-	max-width: 100%;
-	margin-top: 0;
-}
-
-ul.akb-nav li a {
-	font-size: 13px;
-	color: #222;
-	padding: 0 13px;
-}
-
-ul.akb-nav li a:hover {
-	background: #445e93;
-	color: #fff;
-}
-
-ul.akb-nav li.active {
-	background-color: #445e93;
-}
-
-ul.akb-nav li.active a {
-	color: #fff;
-}
-
-ul.akb-nav i.right {
-	margin-left: 0px;
-}
-
-nav.row {
-	margin-bottom: 0 !important;
-}
-
+.akb-l-logo{display:flex;width:300px}
+.akb-l-logo img{max-width:100%;margin-top:0}
+ul.akb-nav li a{font-size:13px;color:#222;padding:0 13px}
+ul.akb-nav li a:hover{background:#445e93;color:#fff}
+ul.akb-nav li.active{background-color:#445e93}
+ul.akb-nav li.active a{color:#fff}
+ul.akb-nav i.right{margin-left:0}
+nav.row{margin-bottom:0!important}
 @media screen and (max-width: 1366px) {
-	.akb-l-logo {
-		width: 250px;
-	}
+.akb-l-logo{width:250px}
 }
-
 @media screen and (min-width: 1367px) {
-	.akb-l-logo {
-		height: 100% !important;
-	}
-
-	ul.akb-nav {
-		line-height: 70px;
-	}
-
-	nav.row {
-		height: 70px;
-	}
+.akb-l-logo{height:100%!important}
+ul.akb-nav{line-height:70px}
+nav.row{height:70px}
 }
-
 @media screen and (max-width: 994px) {
-	.logo {
-		width: 45px;
-		margin: 5px 0;
-	}
+.logo{width:45px;margin:5px 0}
 }
 
 /*Banner*/
@@ -518,97 +126,19 @@ nav.row {
 
 /* .banner-search-field-style {font-size: 20px !important; font-weight:600; color: #000; background: url(../images/field-bg.png);height:55px !important; margin-bottom:0 !important; -webkit-border-top-left-radius: 30px; -webkit-border-bottom-left-radius: 30px; -moz-border-radius-topleft: 30px; -moz-border-radius-bottomleft: 30px; border-top-left-radius: 30px !important; border-bottom-left-radius: 30px !important; padding-left:15px !important; line-height:55px;  } */
 
-.banner-search-field-style {
-	font-size: 20px !important;
-	font-weight: 600;
-	color: #000;
-	background: url(../images/field-bg.png);
-	height: 55px !important;
-	margin-bottom: 0 !important;
-	-webkit-border-top-left-radius: 30px;
-	-webkit-border-bottom-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
-	-moz-border-radius-bottomleft: 30px;
-	border-top-left-radius: 30px !important;
-	border-bottom-left-radius: 30px !important;
-	padding-left: 15px !important;
-	line-height: 55px;
-}
-
-.banner-search-field-style:focus {
-	border-bottom: none !important;
-	box-shadow: none !important;
-}
-
-::-webkit-input-placeholder {
-	color: #000;
-}
-
-::-moz-placeholder {
-	color: #000;
-}
-
-:-ms-input-placeholder {
-	color: #000;
-}
-
-:-moz-placeholder {
-	color: #000;
-	opacity: 1;
-}
-
-.banner-search-btn {
-	width: 80px;
-	float: right;
-	-webkit-border-top-right-radius: 30px;
-	-webkit-border-bottom-right-radius: 30px;
-	-moz-border-radius-topright: 30px;
-	-moz-border-radius-bottomright: 30px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	padding: 14px 0;
-	background: #fff;
-	cursor: pointer;
-	box-shadow: none !important;
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
-	-moz-border-radius-topleft: 0;
-	-moz-border-radius-bottomleft: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	height: 55px;
-}
-
-.banner-search-btn i {
-	font-size: 32px !important;
-}
-
-.btn-arrow {
-	background-position: -0px -2px;
-	width: 26px;
-	height: 25px;
-	float: left;
-	margin-left: 24px;
-	margin-top: 15px;
-}
-
-.banner-search-btn:hover {
-	background: #445e93;
-}
-
-.banner-search-btn:hover i {
-	color: #fff !important;
-}
-
-.heading {
-	font-weight: bold;
-	font-size: 55px !important;
-	margin: 13px 0;
-}
-
-.parallax {
-	background: #445d93;
-}
+.banner-search-field-style{font-size:20px!important;font-weight:600;color:#000;background:url(../images/field-bg.png);height:55px!important;margin-bottom:0!important;-webkit-border-top-left-radius:30px;-webkit-border-bottom-left-radius:30px;-moz-border-radius-topleft:30px;-moz-border-radius-bottomleft:30px;border-top-left-radius:30px!important;border-bottom-left-radius:30px!important;padding-left:15px!important;line-height:55px}
+.banner-search-field-style:focus{border-bottom:none!important;box-shadow:none!important}
+::-webkit-input-placeholder{color:#000}
+::-moz-placeholder{color:#000}
+:-ms-input-placeholder{color:#000}
+:-moz-placeholder{color:#000;opacity:1}
+.banner-search-btn{width:80px;float:right;-webkit-border-top-right-radius:30px;-webkit-border-bottom-right-radius:30px;-moz-border-radius-topright:30px;-moz-border-radius-bottomright:30px;border-top-right-radius:30px;border-bottom-right-radius:30px;padding:14px 0;background:#fff;cursor:pointer;box-shadow:none!important;-webkit-border-top-left-radius:0;-webkit-border-bottom-left-radius:0;-moz-border-radius-topleft:0;-moz-border-radius-bottomleft:0;border-top-left-radius:0;border-bottom-left-radius:0;height:55px}
+.banner-search-btn i{font-size:32px!important}
+.btn-arrow{background-position:-0 -2px;width:26px;height:25px;float:left;margin-left:24px;margin-top:15px}
+.banner-search-btn:hover{background:#445e93}
+.banner-search-btn:hover i{color:#fff!important}
+.heading{font-weight:700;font-size:55px!important;margin:13px 0}
+.parallax{background:#445d93}
 
 /*.finland-visa-bg { height: 325px; background: url(../images/finland-visa-bg.png) no-repeat 100%; margin-top: 5px;}
 .germany-visa-bg { height: 325px; background: url(../images/germany-visa-bg.png) no-repeat 100%; margin-top: 5px;}
@@ -634,1496 +164,282 @@ nav.row {
 */
 
 /*Country Page Header*/
-
-.country-page-banner {
-	height: 325px;
-	background: url("../images/usa-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.uk-page-banner {
-	height: 325px;
-	background: url("../images/uk-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.turkey-banner {
-	height: 325px;
-	background: url("../images/turkey-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.thailand-visa-bg {
-	height: 325px;
-	background: url("../images/thailand-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.srilanka-visa-bg {
-	height: 325px;
-	background: url("../images/srilanka-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.passport-header-bg {
-	height: 325px;
-	background: url("../images/passport-header-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.southafrica-visa-bg {
-	height: 325px;
-	background: url("../images/southafrica-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.singapore-visa-bg {
-	height: 325px;
-	background: url("../images/singapore-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.malaysia-visa-bg {
-	height: 239px;
-	/* background: url(../images/malaysia-visa-bg.png) no-repeat right; */
-	background: #445d93;
-	/* #042663;*/
-	margin-top: 5px;
-}
-
-.italy-visa-bg {
-	height: 325px;
-	background: url(../images/itali-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.france-visa-bg {
-	height: 325px;
-	background: url(../images/France-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.dubai-visa-bg {
-	height: 325px;
-	background: url("../images/Dubai-visa-bg.png") no-repeat right;
-	margin-top: 5px;
-}
-
-.document-attestation-bg {
-	height: 325px;
-	background: url(../images/document-attestation.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.international-driving-bg {
-	height: 325px;
-	background: url(../images/international-driving-license.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.dubai-visa-mal-bg {
-	height: 325px;
-	background: url(../images/dubai-banner.jpg) no-repeat right;
-	margin-top: 5px;
-	background-size: cover;
-}
-
-.country-page-banner-malaysia h1 {
-	margin-top: 20px;
-	color: #fff !important;
-	font-weight: 600;
-}
-
-.country-page-banner-malaysia .banner-visa-price span {
-	color: #fff !important;
-}
-
-.country-page-banner-malaysia .banner-visa-price {
-	color: #bfbdbd;
-}
-
-.turkey-price {
-	display: flex;
-	align-items: flex-end;
-	flex-wrap: wrap;
-	column-gap: 5px;
-}
-
-.price-brc {
-	font-size: 15px !important;
-	margin-bottom: 5px;
-	white-space: nowrap;
-}
-
-.price-two {
-	display: flex;
-	float: right;
-	flex-direction: column;
-}
+.country-page-banner{height:325px;background:url(../images/usa-visa-bg.png) no-repeat right;margin-top:5px}
+.uk-page-banner{height:325px;background:url(../images/uk-visa-bg.png) no-repeat right;margin-top:5px}
+.turkey-banner{height:325px;background:url(../images/turkey-visa-bg.png) no-repeat right;margin-top:5px}
+.thailand-visa-bg{height:325px;background:url(../images/thailand-visa-bg.png) no-repeat right;margin-top:5px}
+.srilanka-visa-bg{height:325px;background:url(../images/srilanka-visa-bg.png) no-repeat right;margin-top:5px}
+.passport-header-bg{height:325px;background:url(../images/passport-header-bg.png) no-repeat right;margin-top:5px}
+.southafrica-visa-bg{height:325px;background:url(../images/southafrica-visa-bg.png) no-repeat right;margin-top:5px}
+.singapore-visa-bg{height:325px;background:url(../images/singapore-visa-bg.png) no-repeat right;margin-top:5px}
+.malaysia-visa-bg{height:239px;background:#445d93;margin-top:5px}
+.italy-visa-bg{height:325px;background:url(../images/itali-visa-bg.png) no-repeat right;margin-top:5px}
+.france-visa-bg{height:325px;background:url(../images/France-visa-bg.png) no-repeat right;margin-top:5px}
+.dubai-visa-bg{height:325px;background:url("../images/Dubai-visa-bg.png") no-repeat right;margin-top:5px}
+.document-attestation-bg{height:325px;background:url(../images/document-attestation.png) no-repeat right;margin-top:5px}
+.international-driving-bg{height:325px;background:url(../images/international-driving-license.png) no-repeat right;margin-top:5px}
+.dubai-visa-mal-bg{height:325px;background:url(../images/dubai-banner.jpg) no-repeat right;margin-top:5px;background-size:cover}
+.country-page-banner-malaysia h1{margin-top:20px;color:#fff!important;font-weight:600}
+.country-page-banner-malaysia .banner-visa-price span{color:#fff!important}
+.country-page-banner-malaysia .banner-visa-price{color:#bfbdbd}
+.turkey-price{display:flex;align-items:flex-end;flex-wrap:wrap;column-gap:5px}
+.price-brc{font-size:15px!important;margin-bottom:5px;white-space:nowrap}
+.price-two{display:flex;float:right;flex-direction:column}
 
 /*Frequent Visas*/
-
-.visa-pkg-name {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 25px;
-	color: #000;
-	font-weight: 500;
-	margin: 0;
-}
-
-.visa-pkg-name span {
-	width: 100%;
-	float: left;
-	text-align: center;
-	color: #9b9b9b;
-	font-size: 15px;
-	font-weight: normal;
-	padding-top: 5px;
-}
-
-.visa-pkg-price {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 25px;
-	padding-top: 30px;
-	font-weight: 600;
-}
-
-.violet-color {
-	color: #784dda;
-	border-bottom: 3px solid #784dda;
-}
-
-.orange-color {
-	color: #d96554;
-	border-bottom: 3px solid #d96554;
-}
-
-.yellow-color {
-	color: #f3af3e;
-	border-bottom: 3px solid #f3af3e;
-}
-
-.yellow-color {
-	color: #f3af3e;
-	border-bottom: 3px solid #f3af3e;
-}
-
-.blue-color {
-	color: #4dd0da;
-	border-bottom: 3px solid #4dd0da;
-}
-
-.akb-container {
-	max-width: 1200px !important;
-	min-width: 300px !important;
-	margin: 0 auto;
-}
-
-.dubvisa-pkg-name {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 19px;
-	color: #000;
-	font-weight: 500;
-	margin: 0;
-}
-
-.dubvisa-pkg-name span {
-	width: 100%;
-	float: left;
-	text-align: center;
-	color: #9b9b9b;
-	font-size: 15px;
-	font-weight: normal;
-	padding-top: 5px;
-}
-
-.dubvisa-pkg-price {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 22px;
-	padding-top: 30px;
-	font-weight: 600;
-}
-
-.box-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.mar-auto {
-	margin-left: 0 !important;
-}
-
-.australia-visa-bg {
-	height: 325px;
-	background: url(../images/australia-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.belgium-visa-bg {
-	height: 325px;
-	background: url(../images/belgium-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.canada-visa-bg {
-	height: 325px;
-	background: url(../images/canada-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.china-visa-bg {
-	height: 325px;
-	background: url(../images/china-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
+.visa-pkg-name{width:100%;float:left;text-align:center;font-size:25px;color:#000;font-weight:500;margin:0}
+.visa-pkg-name span{width:100%;float:left;text-align:center;color:#9b9b9b;font-size:15px;font-weight:400;padding-top:5px}
+.visa-pkg-price{width:100%;float:left;text-align:center;font-size:25px;padding-top:30px;font-weight:600}
+.violet-color{color:#784dda;border-bottom:3px solid #784dda}
+.orange-color{color:#d96554;border-bottom:3px solid #d96554}
+.yellow-color{color:#f3af3e;border-bottom:3px solid #f3af3e;color:#f3af3e;border-bottom:3px solid #f3af3e}
+.blue-color{color:#4dd0da;border-bottom:3px solid #4dd0da}
+.akb-container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
+.dubvisa-pkg-name{width:100%;float:left;text-align:center;font-size:19px;color:#000;font-weight:500;margin:0}
+.dubvisa-pkg-name span{width:100%;float:left;text-align:center;color:#9b9b9b;font-size:15px;font-weight:400;padding-top:5px}
+.dubvisa-pkg-price{width:100%;float:left;text-align:center;font-size:22px;padding-top:30px;font-weight:600}
+.box-center{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
+.mar-auto{margin-left:0!important}
+.australia-visa-bg{height:325px;background:url(../images/australia-visa-bg.png) no-repeat right;margin-top:5px}
+.belgium-visa-bg{height:325px;background:url(../images/belgium-visa-bg.png) no-repeat right;margin-top:5px}
+.canada-visa-bg{height:325px;background:url(../images/canada-visa-bg.png) no-repeat right;margin-top:5px}
+.china-visa-bg{height:325px;background:url(../images/china-visa-bg.png) no-repeat right;margin-top:5px}
 
 /*Our experts*/
 
-.talkto-martop {
-	margin-top: 20px;
-}
-
-.expert span {
-	width: 100%;
-	padding: 10px 2%;
-	background: url(../images/black-bg.png);
-	float: left;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	font-size: 13px;
-	z-index: 999;
-}
-
-.expert span b {
-	width: 100%;
-	float: left;
-	font-weight: 600;
-}
-
-.expert img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.carousel .carousel-item {
-	opacity: 1 !important;
-	top: -30px !important;
-}
-
-.carousel .akb-carsl {
-	top: 0px !important;
-}
-
-.carousel {
-	height: 315px !important;
-	align-items: left !important;
-}
-
-.visa-expert-otr {
-	width: 100%;
-	overflow: hidden;
-	height: 202px !important;
-}
-
-.home-visa-expert-otr {
-	width: 100%;
-	overflow: hidden;
-}
-
-.visa-expert-wrap {
-	width: 1385px;
-}
-
-.visa-exp-col {
-	width: 190px;
-	float: left;
-	margin-right: 7px;
-}
-
-.home-visa-expert-wrap {
-	width: 2080px;
-	position: absolute;
-	top: -100px;
-}
-
-.home-visa-exp-col {
-	width: 290px;
-	float: left;
-	margin-right: 7px;
-}
-
-.arrow-div {
-	position: relative;
-	top: 210px;
-}
-
-.arrow-div-innr {
-	position: relative;
-	top: 139px;
-}
-
-.btn-prv {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	left: 20px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-nxt {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	right: 20px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-prv i {
-	font-size: 32px !important;
-	line-height: 48px;
-	z-index: 999;
-}
-
-.btn-nxt i {
-	font-size: 32px !important;
-	line-height: 48px;
-	float: right;
-	z-index: 999;
-}
-
-.btn-nxt-cntry {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	right: 10px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-nxt-cntry i {
-	font-size: 32px !important;
-	line-height: 48px;
-	float: right;
-	z-index: 999;
-}
-
-.btn-prv-cntry {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	left: 10px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-prv-cntry i {
-	font-size: 32px !important;
-	line-height: 48px;
-	z-index: 999;
-}
-
-.talkto {
-	display: none;
-}
-
+.talkto-martop{margin-top:20px}
+.expert span{width:100%;padding:10px 2%;background:url(../images/black-bg.png);float:left;position:absolute;bottom:0;left:0;color:#fff;font-size:13px;z-index:999}
+.expert span b{width:100%;float:left;font-weight:600}
+.expert img{display:block;max-width:100%;height:auto}
+.carousel .carousel-item{opacity:1!important;top:-30px!important}
+.carousel .akb-carsl{top:0!important}
+.carousel{height:315px!important;align-items:left!important}
+.visa-expert-otr{width:100%;overflow:hidden;height:202px!important}
+.home-visa-expert-otr{width:100%;overflow:hidden}
+.visa-expert-wrap{width:1385px}
+.visa-exp-col{width:190px;float:left;margin-right:7px}
+.home-visa-expert-wrap{width:2080px;position:absolute;top:-100px}
+.home-visa-exp-col{width:290px;float:left;margin-right:7px}
+.arrow-div{position:relative;top:210px}
+.arrow-div-innr{position:relative;top:139px}
+.btn-prv{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);left:20px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-nxt{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);right:20px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-prv i{font-size:32px!important;line-height:48px;z-index:999}
+.btn-nxt i{font-size:32px!important;line-height:48px;float:right;z-index:999}
+.btn-nxt-cntry{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);right:10px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-nxt-cntry i{font-size:32px!important;line-height:48px;float:right;z-index:999}
+.btn-prv-cntry{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);left:10px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-prv-cntry i{font-size:32px!important;line-height:48px;z-index:999}
+.talkto{display:none}
 @media screen and (max-width: 600px) {
-	.talkto {
-		display: block;
-	}
+.talkto{display:block}
 }
-
-.austria-visa-bg {
-	height: 325px;
-	background: url(../images/austria-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.czech-visa-bg {
-	height: 325px;
-	background: url(../images/czech-republic-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.denmark-visa-bg {
-	height: 325px;
-	background: url(../images/denmark-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.finland-visa-bg {
-	height: 325px;
-	background: url(../images/finland-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.germany-visa-bg {
-	height: 325px;
-	background: url(../images/germany-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.greece-visa-bg {
-	height: 325px;
-	background: url(../images/greece-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.hongkong-visa-bg {
-	height: 325px;
-	background: url(../images/hongkong-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.india-visa-bg {
-	height: 325px;
-	background: url(../images/india-visa-bg-uk.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.hungary-visa-bg {
-	height: 325px;
-	background: url(../images/hungary.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.iceland-visa-bg {
-	height: 325px;
-	background: url(../images/iceland.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.japan-visa-bg {
-	height: 325px;
-	background: url(../images/japan.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.latvia-visa-bg {
-	height: 325px;
-	background: url(../images/latvia.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.malta-visa-bg {
-	height: 325px;
-	background: url(../images/malta.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.netherlands-visa-bg {
-	height: 325px;
-	background: url(../images/netherlands.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.new-zealand-visa-bg {
-	height: 325px;
-	background: url(../images/new-zealand.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.norway-visa-bg {
-	height: 325px;
-	background: url(../images/norway.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.lithuania-visa-bg {
-	height: 325px;
-	background: url(../images/lithuania.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.luxembourge-visa-bg {
-	height: 325px;
-	background: url(../images/luxembourge.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.poland-visa-bg {
-	height: 325px;
-	background: url(../images/poland.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.portugal-visa-bg {
-	height: 325px;
-	background: url(../images/portugal.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.schengen-visa-bg {
-	height: 325px;
-	background: url(../images/schengen.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.southkorea-visa-bg {
-	height: 325px;
-	background: url(../images/southkorea.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.spain-visa-bg {
-	height: 325px;
-	background: url(../images/spain.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.sweden-visa-bg {
-	height: 325px;
-	background: url(../images/sweden.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.switzerland-visa-bg {
-	height: 325px;
-	background: url(../images/switzerland.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.kenya-visa-bg {
-	height: 325px;
-	background: url(../images/kenya-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.vietnam-visa-bg {
-	height: 325px;
-	background: url(../images/vietnam-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.cambodia-visa-bg {
-	height: 325px;
-	background: url(../images/cambodia-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.bangladesh-visa-bg {
-	height: 325px;
-	background: url(../images/bangladesh-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.armenia-visa-bg {
-	height: 325px;
-	background: url(../images/armania-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.croatia-visa-bg {
-	height: 325px;
-	background: url(../images/croatia-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.myanmar-visa-bg {
-	height: 325px;
-	background: url(../images/myanmar.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.oman-visa-bg {
-	height: 325px;
-	background: url(../images/oman-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.philippines-visa-bg {
-	height: 325px;
-	background: url(../images/philippines-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
-.qatar-visa-bg {
-	height: 325px;
-	background: url(../images/qatar-visa-bg.jpg) no-repeat right;
-	margin-top: 5px;
-}
-
+.austria-visa-bg{height:325px;background:url(../images/austria-visa-bg.png) no-repeat right;margin-top:5px}
+.czech-visa-bg{height:325px;background:url(../images/czech-republic-visa-bg.png) no-repeat right;margin-top:5px}
+.denmark-visa-bg{height:325px;background:url(../images/denmark-visa-bg.png) no-repeat right;margin-top:5px}
+.finland-visa-bg{height:325px;background:url(../images/finland-visa-bg.png) no-repeat right;margin-top:5px}
+.germany-visa-bg{height:325px;background:url(../images/germany-visa-bg.png) no-repeat right;margin-top:5px}
+.greece-visa-bg{height:325px;background:url(../images/greece-visa-bg.png) no-repeat right;margin-top:5px}
+.hongkong-visa-bg{height:325px;background:url(../images/hongkong-visa-bg.png) no-repeat right;margin-top:5px}
+.india-visa-bg{height:325px;background:url(../images/india-visa-bg-uk.png) no-repeat right;margin-top:5px}
+.hungary-visa-bg{height:325px;background:url(../images/hungary.png) no-repeat right;margin-top:5px}
+.iceland-visa-bg{height:325px;background:url(../images/iceland.png) no-repeat right;margin-top:5px}
+.japan-visa-bg{height:325px;background:url(../images/japan.png) no-repeat right;margin-top:5px}
+.latvia-visa-bg{height:325px;background:url(../images/latvia.png) no-repeat right;margin-top:5px}
+.malta-visa-bg{height:325px;background:url(../images/malta.png) no-repeat right;margin-top:5px}
+.netherlands-visa-bg{height:325px;background:url(../images/netherlands.png) no-repeat right;margin-top:5px}
+.new-zealand-visa-bg{height:325px;background:url(../images/new-zealand.png) no-repeat right;margin-top:5px}
+.norway-visa-bg{height:325px;background:url(../images/norway.png) no-repeat right;margin-top:5px}
+.lithuania-visa-bg{height:325px;background:url(../images/lithuania.png) no-repeat right;margin-top:5px}
+.luxembourge-visa-bg{height:325px;background:url(../images/luxembourge.png) no-repeat right;margin-top:5px}
+.poland-visa-bg{height:325px;background:url(../images/poland.png) no-repeat right;margin-top:5px}
+.portugal-visa-bg{height:325px;background:url(../images/portugal.png) no-repeat right;margin-top:5px}
+.schengen-visa-bg{height:325px;background:url(../images/schengen.png) no-repeat right;margin-top:5px}
+.southkorea-visa-bg{height:325px;background:url(../images/southkorea.png) no-repeat right;margin-top:5px}
+.spain-visa-bg{height:325px;background:url(../images/spain.png) no-repeat right;margin-top:5px}
+.sweden-visa-bg{height:325px;background:url(../images/sweden.png) no-repeat right;margin-top:5px}
+.switzerland-visa-bg{height:325px;background:url(../images/switzerland.png) no-repeat right;margin-top:5px}
+.kenya-visa-bg{height:325px;background:url(../images/kenya-visa-bg.jpg) no-repeat right;margin-top:5px}
+.vietnam-visa-bg{height:325px;background:url(../images/vietnam-visa-bg.jpg) no-repeat right;margin-top:5px}
+.cambodia-visa-bg{height:325px;background:url(../images/cambodia-visa-bg.jpg) no-repeat right;margin-top:5px}
+.bangladesh-visa-bg{height:325px;background:url(../images/bangladesh-visa-bg.jpg) no-repeat right;margin-top:5px}
+.armenia-visa-bg{height:325px;background:url(../images/armania-visa-bg.jpg) no-repeat right;margin-top:5px}
+.croatia-visa-bg{height:325px;background:url(../images/croatia-visa-bg.jpg) no-repeat right;margin-top:5px}
+.myanmar-visa-bg{height:325px;background:url(../images/myanmar.jpg) no-repeat right;margin-top:5px}
+.oman-visa-bg{height:325px;background:url(../images/oman-visa-bg.jpg) no-repeat right;margin-top:5px}
+.philippines-visa-bg{height:325px;background:url(../images/philippines-visa-bg.jpg) no-repeat right;margin-top:5px}
+.qatar-visa-bg{height:325px;background:url(../images/qatar-visa-bg.jpg) no-repeat right;margin-top:5px}
 @media screen and (max-width: 990px) {
-	.dubai-visa-bg {
-		background-position: 84px 0px !important;
-	}
-
-	.malaysia-visa-bg {
-		background-position: 188px 0px !important;
-	}
-
-	.singapore-visa-bg {
-		background-position: 188px 0px !important;
-	}
-
-	.srilanka-visa-bg {
-		background-position: 121px 0px !important;
-	}
-
-	.passport-header-bg {
-		background-position: 121px 0px !important;
-	}
-
-	.thailand-visa-bg {
-		background-position: 87px 0px !important;
-	}
-
-	.australia-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.france-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.italy-visa-bg {
-		background-position: 115px 0px !important;
-	}
-
-	.southafrica-visa-bg {
-		background-position: 96px 0px !important;
-	}
-
-	.turkey-banner {
-		background-position: 96px 0px !important;
-	}
-
-	.uk-page-banner {
-		background-position: 96px 0px !important;
-	}
-
-	.country-page-banner {
-		background-position: 0px 0px !important;
-	}
-
-	.belgium-visa-bg {
-		background-position: 145px 0px !important;
-	}
-
-	.canada-visa-bg {
-		background-position: 145px 0px !important;
-	}
-
-	.china-visa-bg {
-		background-position: 145px 0px !important;
-	}
-
-	.austria-visa-bg {
-		background-position: 236px 0px !important;
-	}
-
-	.czech-visa-bg {
-		background-position: 236px 0px !important;
-	}
-
-	.denmark-visa-bg {
-		background-position: 131px 0px !important;
-	}
-
-	.finland-visa-bg {
-		background-position: 131px 0px !important;
-	}
-
-	.germany-visa-bg {
-		background-position: 185px 0px !important;
-	}
-
-	.greece-visa-bg {
-		background-position: 185px 0px !important;
-	}
-
-	.hongkong-visa-bg {
-		background-position: 120px 0px !important;
-	}
-
-	.hungary-visa-bg {
-		background-position: 162px 0px !important;
-	}
-
-	.iceland-visa-bg {
-		background-position: 120px 0px !important;
-	}
-
-	.japan-visa-bg {
-		background-position: -80px 0px !important;
-	}
-
-	.latvia-visa-bg {
-		background-position: 120px 0px !important;
-	}
-
-	.malta-visa-bg {
-		background-position: 80px 0px !important;
-	}
-
-	.netherlands-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.new-zealand-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.norway-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.lithuania-visa-bg {
-		background-position: -50px 0px !important;
-	}
-
-	.luxembourge-visa-bg {
-		background-position: 50px 0px !important;
-	}
-
-	.poland-visa-bg {
-		background-position: -20px 0px !important;
-	}
-
-	.portugal-visa-bg {
-		background-position: 200px 0px !important;
-	}
-
-	.schengen-visa-bg {
-		background-position: 200px 0px !important;
-	}
-
-	.southkorea-visa-bg {
-		background-position: 100px 0px !important;
-	}
-
-	.spain-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.sweden-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.switzerland-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.kenya-visa-bg {
-		background-position: 40px 0px !important;
-	}
-
-	.vietnam-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.cambodia-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.bangladesh-visa-bg {
-		background-position: 188px 0px !important;
-	}
-
-	.armenia-visa-bg {
-		background-position: 140px 0px !important;
-	}
-
-	.croatia-visa-bg {
-		background-position: 250px 0px !important;
-	}
-
-	.myanmar-visa-bg {
-		background-position: 170px 0px !important;
-	}
-
-	.oman-visa-bg {
-		background-position: 180px 0px !important;
-	}
-
-	.philippines-visa-bg {
-		background-position: 180px 0px !important;
-	}
-
-	.qatar-visa-bg {
-		background-position: 135px 0px !important;
-	}
-
-	.india-visa-bg {
-		background: url(../images/india-visa-bg-uk-responsive.png) no-repeat right;
-		background-position-x: 40px !important;
-	}
+.dubai-visa-bg{background-position:84px 0!important}
+.malaysia-visa-bg{background-position:188px 0!important}
+.singapore-visa-bg{background-position:188px 0!important}
+.srilanka-visa-bg{background-position:121px 0!important}
+.passport-header-bg{background-position:121px 0!important}
+.thailand-visa-bg{background-position:87px 0!important}
+.australia-visa-bg{background-position:50px 0!important}
+.france-visa-bg{background-position:50px 0!important}
+.italy-visa-bg{background-position:115px 0!important}
+.southafrica-visa-bg{background-position:96px 0!important}
+.turkey-banner{background-position:96px 0!important}
+.uk-page-banner{background-position:96px 0!important}
+.country-page-banner{background-position:0 0!important}
+.belgium-visa-bg{background-position:145px 0!important}
+.canada-visa-bg{background-position:145px 0!important}
+.china-visa-bg{background-position:145px 0!important}
+.austria-visa-bg{background-position:236px 0!important}
+.czech-visa-bg{background-position:236px 0!important}
+.denmark-visa-bg{background-position:131px 0!important}
+.finland-visa-bg{background-position:131px 0!important}
+.germany-visa-bg{background-position:185px 0!important}
+.greece-visa-bg{background-position:185px 0!important}
+.hongkong-visa-bg{background-position:120px 0!important}
+.hungary-visa-bg{background-position:162px 0!important}
+.iceland-visa-bg{background-position:120px 0!important}
+.japan-visa-bg{background-position:-80px 0!important}
+.latvia-visa-bg{background-position:120px 0!important}
+.malta-visa-bg{background-position:80px 0!important}
+.netherlands-visa-bg{background-position:50px 0!important}
+.new-zealand-visa-bg{background-position:50px 0!important}
+.norway-visa-bg{background-position:50px 0!important}
+.lithuania-visa-bg{background-position:-50px 0!important}
+.luxembourge-visa-bg{background-position:50px 0!important}
+.poland-visa-bg{background-position:-20px 0!important}
+.portugal-visa-bg{background-position:200px 0!important}
+.schengen-visa-bg{background-position:200px 0!important}
+.southkorea-visa-bg{background-position:100px 0!important}
+.spain-visa-bg{background-position:250px 0!important}
+.sweden-visa-bg{background-position:250px 0!important}
+.switzerland-visa-bg{background-position:250px 0!important}
+.kenya-visa-bg{background-position:40px 0!important}
+.vietnam-visa-bg{background-position:250px 0!important}
+.cambodia-visa-bg{background-position:250px 0!important}
+.bangladesh-visa-bg{background-position:188px 0!important}
+.armenia-visa-bg{background-position:140px 0!important}
+.croatia-visa-bg{background-position:250px 0!important}
+.myanmar-visa-bg{background-position:170px 0!important}
+.oman-visa-bg{background-position:180px 0!important}
+.philippines-visa-bg{background-position:180px 0!important}
+.qatar-visa-bg{background-position:135px 0!important}
+.india-visa-bg{background:url(../images/india-visa-bg-uk-responsive.png) no-repeat right;background-position-x:40px!important}
 }
-
 @media screen and (max-width: 500px) {
-	.heading {
-		font-size: 40px !important;
-	}
-
-	.banner-row {
-		margin-top: 112px;
-	}
+.heading{font-size:40px!important}
+.banner-row{margin-top:112px}
 }
 
 /*Frequent Visas*/
 
-.visa-pkg-name {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 25px;
-	color: #000;
-	font-weight: 500;
-	margin: 0;
-}
-
-.visa-pkg-name span {
-	width: 100%;
-	float: left;
-	text-align: center;
-	color: #9b9b9b;
-	font-size: 15px;
-	font-weight: normal;
-	padding-top: 5px;
-}
-
-.visa-pkg-price {
-	width: 100%;
-	float: left;
-	text-align: center;
-	font-size: 25px;
-	padding-top: 30px;
-	font-weight: 600;
-}
-
-.violet-color {
-	color: #784dda;
-	border-bottom: 3px solid #784dda;
-}
-
-.orange-color {
-	color: #d96554;
-	border-bottom: 3px solid #d96554;
-}
-
-.yellow-color {
-	color: #f3af3e;
-	border-bottom: 3px solid #f3af3e;
-}
-
-.yellow-color {
-	color: #f3af3e;
-	border-bottom: 3px solid #f3af3e;
-}
-
-.blue-color {
-	color: #4dd0da;
-	border-bottom: 3px solid #4dd0da;
-}
-
-.akb-container {
-	max-width: 1200px !important;
-	min-width: 300px !important;
-	margin: 0 auto;
-}
-
-.box-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.mar-auto {
-	margin-left: 0 !important;
-}
+.visa-pkg-name{width:100%;float:left;text-align:center;font-size:25px;color:#000;font-weight:500;margin:0}
+.visa-pkg-name span{width:100%;float:left;text-align:center;color:#9b9b9b;font-size:15px;font-weight:400;padding-top:5px}
+.visa-pkg-price{width:100%;float:left;text-align:center;font-size:25px;padding-top:30px;font-weight:600}
+.violet-color{color:#784dda;border-bottom:3px solid #784dda}
+.orange-color{color:#d96554;border-bottom:3px solid #d96554}
+.yellow-color{color:#f3af3e;border-bottom:3px solid #f3af3e;color:#f3af3e;border-bottom:3px solid #f3af3e}
+.blue-color{color:#4dd0da;border-bottom:3px solid #4dd0da}
+.akb-container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
+.box-center{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
+.mar-auto{margin-left:0!important}
 
 /*Applying with Akbar is this simple*/
 
-.submit-doc {
-	background-position: -30px 0;
-	width: 57px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.verify-document {
-	background-position: -90px 9px;
-	width: 59px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.receive-visa {
-	background-position: -154px 7px;
-	width: 71px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.interview {
-	background-position: -1px -223px;
-	width: 48px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.round-box {
-	display: block;
-	background: #fff;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin: 10px auto;
-	z-index: 5;
-	position: relative;
-}
-
-.center-bar {
-	width: 100%;
-	float: left;
-	height: 6px;
-	background: #fed9a2;
-}
-
-.center-bar-position {
-	margin-top: -23px;
-}
-
-.pay-online {
-	background-position: -236px 0px;
-	width: 61px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.upload-doc {
-	background-position: -238px -75px;
-	width: 59px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.verify-doc {
-	background-position: -235px -151px;
-	width: 62px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
-.visa-pickup-icon {
-	background-position: -2px -73px;
-	width: 75px;
-	height: 71px;
-	display: block;
-	margin: 0 auto;
-}
-
+.submit-doc{background-position:-30px 0;width:57px;height:71px;display:block;margin:0 auto}
+.verify-document{background-position:-90px 9px;width:59px;height:71px;display:block;margin:0 auto}
+.receive-visa{background-position:-154px 7px;width:71px;height:71px;display:block;margin:0 auto}
+.interview{background-position:-1px -223px;width:48px;height:71px;display:block;margin:0 auto}
+.round-box{display:block;background:#fff;width:20px;height:20px;border-radius:50%;margin:10px auto;z-index:5;position:relative}
+.center-bar{width:100%;float:left;height:6px;background:#fed9a2}
+.center-bar-position{margin-top:-23px}
+.pay-online{background-position:-236px 0;width:61px;height:71px;display:block;margin:0 auto}
+.upload-doc{background-position:-238px -75px;width:59px;height:71px;display:block;margin:0 auto}
+.verify-doc{background-position:-235px -151px;width:62px;height:71px;display:block;margin:0 auto}
+.visa-pickup-icon{background-position:-2px -73px;width:75px;height:71px;display:block;margin:0 auto}
 @media screen and (max-width: 600px) {
-	.akb-text-left {
-		text-align: left;
-	}
-
-	.center-responsive {
-		height: 73px;
-		vertical-align: middle;
-		display: table-cell !important;
-		float: none !important;
-	}
+.akb-text-left{text-align:left}
+.center-responsive{height:73px;vertical-align:middle;display:table-cell!important;float:none!important}
 }
 
 /*Why choose us?*/
 
-.pickup-icon {
-	background-position: -2px -86px;
-	width: 75px;
-	height: 56px;
-	display: block;
-	margin: 0 auto;
-}
-
-.application-icon {
-	background-position: -85px -76px;
-	width: 64px;
-	height: 66px;
-	display: block;
-	margin: 0 auto;
-}
-
-.doc-check-icon {
-	background-position: -158px -73px;
-	width: 65px;
-	height: 69px;
-	display: block;
-	margin: 0 auto;
-}
-
-.safety-icon {
-	background-position: -2px -150px;
-	width: 65px;
-	height: 69px;
-	display: block;
-	margin: 0 auto;
-}
-
-.experience-icon {
-	background-position: -73px -148px;
-	width: 66px;
-	height: 69px;
-	display: block;
-	margin: 0 auto;
-}
-
-.support-icon {
-	background-position: -143px -148px;
-	width: 66px;
-	height: 69px;
-	display: block;
-	margin: 0 auto;
-}
-
-.visa-brk {
-	word-break: break-all;
-}
-
-.online-app {
-	background-position: -227px -367px;
-	width: 72px;
-	height: 67px;
-	display: block;
-	margin: 0 auto;
-}
-
-.approval-rate {
-	background-position: -143px -371px;
-	width: 74px;
-	height: 63px;
-	display: block;
-	margin-left: 41%;
-}
-
-.visa-service {
-	background-position: -10px -456px;
-	width: 72px;
-	height: 67px;
-	display: block;
-	margin: 0 auto;
-}
-
-.visa-experience {
-	background-position: -124px -449px;
-	width: 72px;
-	height: 67px;
-	display: block;
-	margin: 0 auto;
-}
-
-.visa-branches {
-	background-position: -227px -458px;
-	width: 72px;
-	height: 67px;
-	display: block;
-	margin: 0 auto;
-}
-
-.visa-ssistance {
-	background-position: -6px -554px;
-	width: 72px;
-	height: 67px;
-	display: block;
-	margin: 0 auto;
-}
-
+.pickup-icon{background-position:-2px -86px;width:75px;height:56px;display:block;margin:0 auto}
+.application-icon{background-position:-85px -76px;width:64px;height:66px;display:block;margin:0 auto}
+.doc-check-icon{background-position:-158px -73px;width:65px;height:69px;display:block;margin:0 auto}
+.safety-icon{background-position:-2px -150px;width:65px;height:69px;display:block;margin:0 auto}
+.experience-icon{background-position:-73px -148px;width:66px;height:69px;display:block;margin:0 auto}
+.support-icon{background-position:-143px -148px;width:66px;height:69px;display:block;margin:0 auto}
+.visa-brk{word-break:break-all}
+.online-app{background-position:-227px -367px;width:72px;height:67px;display:block;margin:0 auto}
+.approval-rate{background-position:-143px -371px;width:74px;height:63px;display:block;margin-left:41%}
+.visa-service{background-position:-10px -456px;width:72px;height:67px;display:block;margin:0 auto}
+.visa-experience{background-position:-124px -449px;width:72px;height:67px;display:block;margin:0 auto}
+.visa-branches{background-position:-227px -458px;width:72px;height:67px;display:block;margin:0 auto}
+.visa-ssistance{background-position:-6px -554px;width:72px;height:67px;display:block;margin:0 auto}
 @media screen and (max-width: 612px) {
-	.approval-rate {
-		margin: 0 auto !important;
-	}
+.approval-rate{margin:0 auto!important}
 }
 
 /*Our experts*/
-
-.talkto-martop {
-	margin-top: 20px;
-}
-
-.expert span {
-	width: 100%;
-	padding: 10px 2%;
-	background: url(../images/black-bg.png);
-	float: left;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: #fff;
-	font-size: 13px;
-	z-index: 999;
-}
-
-.expert span b {
-	width: 100%;
-	float: left;
-	font-weight: 600;
-}
-
-.expert img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.carousel .carousel-item {
-	opacity: 1 !important;
-	top: -30px !important;
-}
-
-.carousel .akb-carsl {
-	top: 0px !important;
-}
-
-.carousel {
-	height: 315px !important;
-}
-
-.visa-expert-otr {
-	width: 100%;
-	overflow: hidden;
-	height: 202px !important;
-}
-
-.home-visa-expert-otr {
-	width: 100%;
-	overflow: hidden;
-}
-
-.visa-expert-wrap {
-	width: 1385px;
-}
-
-.visa-exp-col {
-	width: 190px;
-	float: left;
-	margin-right: 7px;
-}
-
-.home-visa-expert-wrap {
-	width: 2080px;
-	position: absolute;
-	top: -100px;
-}
-
-.home-visa-exp-col {
-	width: 290px;
-	float: left;
-	margin-right: 7px;
-}
-
-.arrow-div {
-	position: relative;
-	top: 210px;
-}
-
-.arrow-div-innr {
-	position: relative;
-	top: 139px;
-}
-
-.btn-prv {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	left: 20px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-nxt {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	right: 20px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-prv i {
-	font-size: 32px !important;
-	line-height: 48px;
-	z-index: 999;
-}
-
-.btn-nxt i {
-	font-size: 32px !important;
-	line-height: 48px;
-	float: right;
-	z-index: 999;
-}
-
-.btn-nxt-cntry {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	right: 10px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-nxt-cntry i {
-	font-size: 32px !important;
-	line-height: 48px;
-	float: right;
-	z-index: 999;
-}
-
-.btn-prv-cntry {
-	width: 40px;
-	height: 50px;
-	position: absolute;
-	background: url(../images/field-bg.png);
-	left: 10px;
-	top: 1px;
-	cursor: pointer;
-	text-align: center;
-	z-index: 1;
-}
-
-.btn-prv-cntry i {
-	font-size: 32px !important;
-	line-height: 48px;
-	z-index: 999;
-}
-
-.talkto {
-	display: none;
-}
-
+.talkto-martop{margin-top:20px}
+.expert span{width:100%;padding:10px 2%;background:url(../images/black-bg.png);float:left;position:absolute;bottom:0;left:0;color:#fff;font-size:13px;z-index:999}
+.expert span b{width:100%;float:left;font-weight:600}
+.expert img{display:block;max-width:100%;height:auto}
+.carousel .carousel-item{opacity:1!important;top:-30px!important}
+.carousel .akb-carsl{top:0!important}
+.carousel{height:315px!important}
+.visa-expert-otr{width:100%;overflow:hidden;height:202px!important}
+.home-visa-expert-otr{width:100%;overflow:hidden}
+.visa-expert-wrap{width:1385px}
+.visa-exp-col{width:190px;float:left;margin-right:7px}
+.home-visa-expert-wrap{width:2080px;position:absolute;top:-100px}
+.home-visa-exp-col{width:290px;float:left;margin-right:7px}
+.arrow-div{position:relative;top:210px}
+.arrow-div-innr{position:relative;top:139px}
+.btn-prv{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);left:20px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-nxt{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);right:20px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-prv i{font-size:32px!important;line-height:48px;z-index:999}
+.btn-nxt i{font-size:32px!important;line-height:48px;float:right;z-index:999}
+.btn-nxt-cntry{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);right:10px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-nxt-cntry i{font-size:32px!important;line-height:48px;float:right;z-index:999}
+.btn-prv-cntry{width:40px;height:50px;position:absolute;background:url(../images/field-bg.png);left:10px;top:1px;cursor:pointer;text-align:center;z-index:1}
+.btn-prv-cntry i{font-size:32px!important;line-height:48px;z-index:999}
+.talkto{display:none}
 @media screen and (max-width: 600px) {
-	.talkto {
-		display: block;
-	}
+.talkto{display:block}
 }
 
 /*Our happy customers*/
-.best {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-}
-
-.best .left {}
-
-.ex-txt {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-
-.ex-txt span {
-	display: flex;
-	align-items: center;
-	gap: 3px;
-}
-
-.best .right {
-	display: flex;
-	flex-direction: column;
-}
-
-.best .right .c-name {
-	font-size: 28px;
-	font-weight: 700;
-	color: #202124;
-}
-
-.best .right .c-name span {
-	display: flex;
-	flex-direction: row;
-}
-
-.best .right .c-name .txt {
-	display: flex;
-	flex-direction: row;
-}
-
-.testi-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	width: 100%;
-	gap: 10px;
-}
-
-.testi-header .left {
-	display: flex;
-	align-items: center;
-}
-
-.testi-header .right .name {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.testi-header .right .name .df {
-	display: flex;
-	gap: 5px;
-	align-items: center;
-}
-
-.testi-header .right .name .df .user {
-	color: #202124;
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.testi-header .right .name .date {
-	width: 100%;
-	text-align: left;
-	color: #70757a;
-	font-size: 12px;
-
-}
-
-.testi-header .left .name .df .user {}
-
-.testi-header .right {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 65px;
-	gap: 5px;
-}
-
-.testi-header .star-review .star {
-	display: flex;
-	align-items: center;
-	gap: 2px;
-}
-
-.testi-header .star-review .star,
-.review img {
-	cursor: pointer;
-}
-
-.testi-header .right .star-review {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-
-.testi-header .right .star-review .review {
-	display: flex;
-	align-items: center;
-}
-
-.testi-body {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	margin-top: 20px;
-
-}
-
-.custr-img-row {
-	/* position: absolute; */
-	/* top: -30px;
-	left: 0px;
-	z-index: 999; */
-}
-
-.happy-cust-row {
-	/* margin-top: 50px; */
-}
-
-.happy-cust-row h6 {
-	font-size: 12px;
-	margin-top: 15px;
-	font-weight: 600;
-}
-
-.happy-cust-row p {
-	font-size: 13px;
-	line-height: 22px;
-}
-
+.best{display:flex;align-items:center;gap:20px}
+.ex-txt{display:flex;align-items:center;gap:5px}
+.ex-txt span{display:flex;align-items:center;gap:3px}
+.best .right{display:flex;flex-direction:column}
+.best .right .c-name{font-size:28px;font-weight:700;color:#202124}
+.best .right .c-name span{display:flex;flex-direction:row}
+.best .right .c-name .txt{display:flex;flex-direction:row}
+.testi-header{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;width:100%;gap:10px}
+.testi-header .left{display:flex;align-items:center}
+.testi-header .right .name{display:flex;flex-direction:column;align-items:center}
+.testi-header .right .name .df{display:flex;gap:5px;align-items:center}
+.testi-header .right .name .df .user{color:#202124;font-weight:600;font-size:14px}
+.testi-header .right .name .date{width:100%;text-align:left;color:#70757a;font-size:12px}
+.testi-header .right{display:flex;align-items:center;justify-content:space-between;width:100%;height:65px;gap:5px}
+.testi-header .star-review .star{display:flex;align-items:center;gap:2px}
+.testi-header .star-review .star,.review img{cursor:pointer}
+.testi-header .right .star-review{display:flex;align-items:center;gap:5px}
+.testi-header .right .star-review .review{display:flex;align-items:center}
+.testi-body{display:flex;flex-direction:row;width:100%;margin-top:20px}
+.happy-cust-row h6{font-size:12px;margin-top:15px;font-weight:600}
+.happy-cust-row p{font-size:13px;line-height:22px}
 @media screen and (max-width: 1000px) {
-	.happy-cust-outrow {
-		overflow-x: scroll;
-	}
-
-	.happy-cust-row {
-		/* width: 1000px; */
-		margin-top: 50px;
-	}
+.happy-cust-outrow{overflow-x:scroll}
+.happy-cust-row{margin-top:50px}
 }
-
 /*Visit us*/
 
-.visit-us-inbox h3 {
-	font-weight: 600;
-	font-size: 18px;
-	color: #000;
-	margin-bottom: 10px;
-}
-
-.visit-us-inbox a {
-	color: #445e93;
-}
-
-.visi-bg {
-	height: 190px;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
-
+.visit-us-inbox h3{font-weight:600;font-size:18px;color:#000;margin-bottom:10px}
+.visit-us-inbox a{color:#445e93}
+.visi-bg{height:190px;position:absolute;top:0;width:100%;z-index:-1}
 @media screen and (max-width: 1000px) {
-	.visit-us-section {
-		overflow-x: scroll;
-	}
-
-	.visit-us-inbox {
-		width: 1000px;
-	}
+.visit-us-section{overflow-x:scroll}
+.visit-us-inbox{width:1000px}
 }
 
 /*---------------------
@@ -2137,105 +453,26 @@ nav.row {
 .dubai-expo img {
 	width: 40%;
 } */
-.dubai-expo,
-.maldives,
-.france,
-.turky {
-	width: 100%;
-}
-
-.dubai-expo,
-.maldives,
-.france,
-.turky img {
-	width: 40%;
-}
-
+.dubai-expo,.maldives,.france,.turky{width:100%}
+.dubai-expo,.maldives,.france,.turky img{width:40%}
 @media screen and (max-width: 599px) {
-	.dubai-expo img {
-		width: 80% !important;
-	}
+.dubai-expo img{width:80%!important}
 }
-
 @media screen and (max-width: 400px) {
-	.dubai-expo img {
-		width: 100% !important;
-	}
+.dubai-expo img{width:100%!important}
 }
-
-.job {
-	color: red;
-	font-size: 18px;
-	font-weight: 400;
-}
-
-.country-page-head {
-	font-size: 50px;
-	font-weight: 400;
-	font-family: 'Work Sans', sans-serif;
-	margin: 20px 0;
-}
-
-.country-page-head cite {
-	font-style: normal;
-}
-
-.country-page-head-rgt {
-	float: right !important;
-	font-size: 20px !important;
-	font-weight: 500 !important;
-	line-height: 34px;
-	margin-top: 13px;
-}
-
-.country-page-head-rgt img {
-	float: left;
-	margin-right: 10px;
-}
-
-.mt-0 {
-	margin-top: 0px !important;
-}
-
-.country-page-banner-row {
-	margin-top: 80px;
-}
-
-.country-page-banner-row-mal .banner-visa-price {
-	font-size: 15px;
-	color: #000;
-	background: rgba(255, 254, 254, 0.8);
-	margin-right: 5px;
-	padding: 5px 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.banner-visa-price {
-	font-size: 15px;
-	color: #7c7c7c;
-}
-
-.banner-visa-price span {
-	font-size: 25px;
-	color: #000;
-	font-weight: normal;
-	width: 100%;
-	float: left;
-}
-
-.country-page-banner {
-	height: 325px;
-	background: url(../images/usa-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
-
-.uk-page-banner {
-	height: 325px;
-	background: url(../images/uk-visa-bg.png) no-repeat right;
-	margin-top: 5px;
-}
+.job{color:red;font-size:18px;font-weight:400}
+.country-page-head{font-size:50px;font-weight:400;font-family:'Work Sans',sans-serif;margin:20px 0}
+.country-page-head cite{font-style:normal}
+.country-page-head-rgt{float:right!important;font-size:20px!important;font-weight:500!important;line-height:34px;margin-top:13px}
+.country-page-head-rgt img{float:left;margin-right:10px}
+.mt-0{margin-top:0!important}
+.country-page-banner-row{margin-top:80px}
+.country-page-banner-row-mal .banner-visa-price{font-size:15px;color:#000;background:rgba(255,254,254,0.8);margin-right:5px;padding:5px 10px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.banner-visa-price{font-size:15px;color:#7c7c7c}
+.banner-visa-price span{font-size:25px;color:#000;font-weight:400;width:100%;float:left}
+.country-page-banner{height:325px;background:url(../images/usa-visa-bg.png) no-repeat right;margin-top:5px}
+.uk-page-banner{height:325px;background:url(../images/uk-visa-bg.png) no-repeat right;margin-top:5px}
 
 /*Country Page Tab*/
 
@@ -3188,7 +1425,7 @@ nav.row {
 .input-field_row .dropdown-content {
 	height: 300px;
 }
-
+.scroll-navbar{position: sticky;top: 0;z-index: 9999;}
 #navbar {
 	overflow: hidden;
 	z-index: 9999;
