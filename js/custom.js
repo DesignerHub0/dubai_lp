@@ -1,5 +1,74 @@
+var divClassName; //lead form class
+var preScrollTop;
+var divpos;
+var sticky;
 $(function(){
     $(".dropdown-trigger").on("click",function(){
         $("#dropdown1").slideToggle();
     });
 });
+$(document).ready(function () {
+    $("#close").click(function () {
+        $("#modal1").fadeOut(50);
+        $(".modal-overlay").fadeOut(500);
+    })
+    $("#applyClick").click(function () {
+        $(".modal-overlay").fadeIn(100);
+        $("#modal1").show(50);
+        $('body ,html').css('overflow', 'auto');
+    }) 
+    // $('.modal').modal();  
+    //lead form scrolling
+    window.onscroll = stickymenu.bind(this);
+    //window.addEventListener('scroll', stickymenu);
+    window.addEventListener('scroll', handleScroll);
+    divClassName = "col m12 l12 visa-enq-row leadformsticky";
+    $('#stickydiv').removeClass();
+    $('#stickydiv').addClass(divClassName);
+    leadformpos();
+    sticky = document.getElementById("navbar").offsetTop;
+    var sectionIds = $('.tab-row .tab a');
+
+    $(document).scroll(function(){
+        sectionIds.each(function(){
+
+            var container = $(this).attr('href');
+            var containerOffset = $(container).offset().top;
+            var containerHeight = $(container).outerHeight();
+            var containerBottom = containerOffset + containerHeight;
+            var scrollPosition = $(document).scrollTop();
+    
+            if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
+                $(this).addClass('active');
+            } else{
+                $(this).removeClass('active');
+            }
+    
+    
+        });
+    });
+
+});
+leadformpos = () => {
+    var divpostop = document.getElementById("stickydiv").getBoundingClientRect();
+    divpos = divpostop.top + window.scrollY - 79;
+}
+handleScroll = (event) => {
+
+    if ((window.scrollY) < divpos) {
+        divClassName = "col m12 l12 visa-enq-row leadformsticky";
+    } else {
+        divClassName = window.scrollY > (preScrollTop) ? "col m12 l12 visa-enq-row leadformsticky dvbtm" : (window.innerHeight < 726) ? "col m12 l12 visa-enq-row leadformsticky dvtop " : "col m12 l12 visa-enq-row leadformsticky dvbtm ";
+    }
+    $('#stickydiv').removeClass();
+    $('#stickydiv').addClass(divClassName);
+    preScrollTop = window.scrollY;
+
+};
+stickymenu = () => {
+    if (window.pageYOffset >= sticky) {
+        $("#navbar").addClass("sticky")
+    } else {
+        $("#navbar").removeClass("sticky");
+    }
+}
