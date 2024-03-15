@@ -39,22 +39,22 @@
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box!important}
 body{font-family:'Work Sans',sans-serif!important;font-size:14px}
 .visa-sprite{background:url(../images/visa-sprite.png) no-repeat}
-.akb-pdng{padding:20px 0!important}
-.akb-mrg-btm{margin-bottom:0!important}
-.akb-relative{position:relative}
-.akb-bg-none{background:none}
-.akb-pdg-none{padding:0!important}
-.akb-pdg-top-none{padding-top:0!important}
-.akb-pdg-left-none{padding-left:0!important}
-.akb-pdg-right-none{padding-right:0!important}
-.akb-mrg-none{margin:0!important}
+.pdng{padding:20px 0!important}
+.mrg-btm{margin-bottom:0!important}
+.relative{position:relative}
+.bg-none{background:none}
+.pdg-none{padding:0!important}
+.pdg-top-none{padding-top:0!important}
+.pdg-left-none{padding-left:0!important}
+.pdg-right-none{padding-right:0!important}
+.mrg-none{margin:0!important}
 .no-margin-bottom{margin-bottom:0!important}
-.akb-round{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.round{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 
 
 /*Button Style*/
 
-.akb-btn {
+.btn {
 	background: #406cb5;
 	color: #fff;
 	font-weight: bold;
@@ -68,7 +68,7 @@ body{font-family:'Work Sans',sans-serif!important;font-size:14px}
 	line-height: 39px !important;
 }
 
-.akb-btn-sec {
+.btn-sec {
 	border: 1px solid #445e93;
 	border-radius: 25px;
 	background: #ffffff;
@@ -84,7 +84,7 @@ body{font-family:'Work Sans',sans-serif!important;font-size:14px}
 	height: auto !important;
 }
 
-.akb-btn-sec:hover {
+.btn-sec:hover {
 	color: #b8336a !important;
 	border-color: #b8336a !important;
 	background: #fff !important;
@@ -92,11 +92,11 @@ body{font-family:'Work Sans',sans-serif!important;font-size:14px}
 
 /*Button Style END*/
 
-.akb-gray-bg {
+.gray-bg {
 	background: #cbd7f5;
 }
 
-.akb-section-style {
+.section-style {
 	padding: 30px 0;
 }
 
@@ -171,36 +171,36 @@ p {
 }
 
 /*navigation*/
-.akb-l-logo {
+.l-logo {
 	display: flex;
 	width: 300px;
 }
 
-.akb-l-logo img {
+.l-logo img {
 	max-width: 100%;
 	margin-top: 0;
 }
 
-ul.akb-nav li a {
+ul.nav li a {
 	font-size: 13px;
 	color: #222;
 	padding: 0 13px;
 }
 
-ul.akb-nav li a:hover {
+ul.nav li a:hover {
 	background: #065074;
 	color: #fff;
 }
 
-ul.akb-nav li.active {
+ul.nav li.active {
 	background-color: #cba344;
 }
 
-ul.akb-nav li.active a {
+ul.nav li.active a {
 	color: #fff;
 }
 
-ul.akb-nav i.right {
+ul.nav i.right {
 	margin-left: 0px;
 }
 
@@ -223,11 +223,11 @@ nav.row {
 	height: 45px;
 }
 @media screen and (max-width: 1366px) {
-.akb-l-logo{width:250px}
+.l-logo{width:250px}
 }
 @media screen and (min-width: 1367px) {
-.akb-l-logo{height:100%!important}
-ul.akb-nav{line-height:70px}
+.l-logo{height:100%!important}
+ul.nav{line-height:70px}
 nav.row{height:70px}
 }
 @media screen and (max-width: 994px) {
@@ -291,7 +291,7 @@ nav.row{height:70px}
 .malaysia-visa-bg{height:239px;background:#445d93;margin-top:5px}
 .italy-visa-bg{height:325px;background:url(../images/itali-visa-bg.png) no-repeat right;margin-top:5px}
 .france-visa-bg{height:325px;background:url(../images/France-visa-bg.png) no-repeat right;margin-top:5px}
-.dubai-visa-bg{height:325px;background:url("../images/Dubai-visa-bg.png") no-repeat right;margin-top:5px}
+.dubai-visa-bg{height:325px;background:url("../images/dubai-visa-bg-2.png") no-repeat right;margin-top:5px}
 .document-attestation-bg{height:325px;background:url(../images/document-attestation.png) no-repeat right;margin-top:5px}
 .international-driving-bg{height:325px;background:url(../images/international-driving-license.png) no-repeat right;margin-top:5px}
 .dubai-visa-mal-bg{height:325px;background:url(../images/dubai-banner.jpg) no-repeat right;margin-top:5px;background-size:cover}
@@ -310,7 +310,7 @@ nav.row{height:70px}
 .orange-color{color:#d96554;border-bottom:3px solid #d96554}
 .yellow-color{color:#f3af3e;border-bottom:3px solid #f3af3e;color:#f3af3e;border-bottom:3px solid #f3af3e}
 .blue-color{color:#4dd0da;border-bottom:3px solid #4dd0da}
-.akb-container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
+.container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
 .dubvisa-pkg-name{width:100%;float:left;text-align:center;font-size:19px;color:#000;font-weight:500;margin:0}
 .dubvisa-pkg-name span{width:100%;float:left;text-align:center;color:#9b9b9b;font-size:15px;font-weight:400;padding-top:5px}
 .dubvisa-pkg-price{width:100%;float:left;text-align:center;font-size:22px;padding-top:30px;font-weight:600}
@@ -328,7 +328,7 @@ nav.row{height:70px}
 .expert span b{width:100%;float:left;font-weight:600}
 .expert img{display:block;max-width:100%;height:auto}
 .carousel .carousel-item{opacity:1!important;top:-30px!important}
-.carousel .akb-carsl{top:0!important}
+.carousel .carsl{top:0!important}
 .carousel{height:315px!important;align-items:left!important}
 .visa-expert-otr{width:100%;overflow:hidden;height:202px!important}
 .home-visa-expert-otr{width:100%;overflow:hidden}
@@ -452,11 +452,11 @@ nav.row{height:70px}
 .orange-color{color:#d96554;border-bottom:3px solid #d96554}
 .yellow-color{color:#f3af3e;border-bottom:3px solid #f3af3e;color:#f3af3e;border-bottom:3px solid #f3af3e}
 .blue-color{color:#4dd0da;border-bottom:3px solid #4dd0da}
-.akb-container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
+.container{max-width:1200px!important;min-width:300px!important;margin:0 auto}
 .box-center{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
 .mar-auto{margin-left:0!important}
 
-/*Applying with Akbar is this simple*/
+/*Applying with r is this simple*/
 
 .submit-doc{background-position:-30px 0;width:57px;height:71px;display:block;margin:0 auto}
 .verify-document{background-position:-90px 9px;width:59px;height:71px;display:block;margin:0 auto}
@@ -470,7 +470,7 @@ nav.row{height:70px}
 .verify-doc{background-position:-235px -151px;width:62px;height:71px;display:block;margin:0 auto}
 .visa-pickup-icon{background-position:-2px -73px;width:75px;height:71px;display:block;margin:0 auto}
 @media screen and (max-width: 600px) {
-.akb-text-left{text-align:left}
+.text-left{text-align:left}
 .center-responsive{height:73px;vertical-align:middle;display:table-cell!important;float:none!important}
 }
 
@@ -499,7 +499,7 @@ nav.row{height:70px}
 .expert span b{width:100%;float:left;font-weight:600}
 .expert img{display:block;max-width:100%;height:auto}
 .carousel .carousel-item{opacity:1!important;top:-30px!important}
-.carousel .akb-carsl{top:0!important}
+.carousel .carsl{top:0!important}
 .carousel{height:315px!important}
 .visa-expert-otr{width:100%;overflow:hidden;height:202px!important}
 .home-visa-expert-otr{width:100%;overflow:hidden}
@@ -704,13 +704,12 @@ nav.row{height:70px}
 .popular-tag {
 	width: 90px;
 	height: 20px;
-	;
 	position: relative;
-	background: #c46f69;
-	background: #152538;
-	background: -moz-linear-gradient(left, #152538 0%, #c46f69 100%);
-	background: -webkit-linear-gradient(left, #152538 0%, #c46f69 100%);
-	background: linear-gradient(to right, #152538 0%, #c46f69 100%);
+	background: #b68a35;
+	background: #92722a;
+	background: -moz-linear-gradient(225.06deg, #b68a35 0%, #92722a 100%);
+	background: -webkit-linear-gradient(225.06deg, #b68a35 0%, #92722a 100%);
+	background: linear-gradient(225.06deg, #b68a35 0%, #92722a 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#152538', endColorstr='#c46f69', GradientType=1);
 	color: #fff;
 	font-size: 13px;
@@ -727,7 +726,7 @@ nav.row{height:70px}
 	bottom: 0;
 	width: 0;
 	height: 0;
-	border-left: 20px solid #c46f69;
+	border-left: 20px solid #b68a35;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 }
@@ -1085,7 +1084,7 @@ nav.row{height:70px}
 	display: inline-block;
 }
 
-.akbr-service-head {
+.-service-head {
 	width: 100%;
 	float: left;
 	text-align: left;
@@ -1097,7 +1096,7 @@ nav.row{height:70px}
 	padding-top: 5px;
 }
 
-.akbr-service-text {
+.-service-text {
 	width: 100%;
 	float: left;
 	text-align: left;
@@ -1823,7 +1822,7 @@ nav.row{height:70px}
 	}
 }
 
-.akb-round-head {
+.round-head {
 	padding: 37px 9px;
 	border-radius: 50%;
 	display: inline-block;
@@ -1839,16 +1838,16 @@ nav.row{height:70px}
 	line-height: 15px;
 }
 
-.akb-advntg {
+.advntg {
 	display: none;
 }
 
 @media screen and (max-width: 1000px) {
-	.akb-advntg {
+	.advntg {
 		display: block;
 	}
 
-	.akb-round-head {
+	.round-head {
 		display: none;
 	}
 }
@@ -1968,7 +1967,7 @@ nav.row{height:70px}
 	}
 }
 
-.akb-nav .dropdown-content {
+.nav .dropdown-content {
 	top: 63px;
 	opacity: 1;
 	left: 813px;
@@ -1982,7 +1981,7 @@ nav.row{height:70px}
 	padding: 9px 13px !important;
 }
 
-ul.akb-nav li a i {
+ul.nav li a i {
 	margin-left: 0px !important;
 }
 
@@ -3084,7 +3083,7 @@ nav ul li ul.dropdown-content {
 	clear: both;
 }
 
-.akb-round .collapsible-header {
+.round .collapsible-header {
 	padding: 15px 0px;
 }
 
