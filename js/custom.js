@@ -7,7 +7,16 @@ $(function(){
         $("#dropdown1").slideToggle();
     });
 });
+(function ($) {
+    $(function () {
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
+        $('select').formSelect();
+    });
+})(jQuery);
 $(document).ready(function () {
+    $('.modal').modal();
     $('select').formSelect();
     $("#close").click(function () {
         $("#modal1").fadeOut(50);
@@ -27,7 +36,7 @@ $(document).ready(function () {
     $('#stickydiv').removeClass();
     $('#stickydiv').addClass(divClassName);
     leadformpos();
-    sticky = document.getElementById("navbar").offsetTop;
+    // sticky = document.getElementById("navbar").offset().top;
     var sectionIds = $('.tab-row .tab a');
 
     $(document).scroll(function(){
@@ -49,14 +58,13 @@ $(document).ready(function () {
         });
     });
     collapsibleFunction('.faqs-list.collapsible');
-    $('#tabsdiv.collapsible li.option-list').click(function() {
+    $('#tabsdiv.collapsible .option-list').click(function() {
         if ($(this).hasClass("active")) {
             $(this).removeClass("active").find(".collapsible-body").slideUp();
         } else {
             $(`#tabsdiv.collapsible .collapsible-body`).slideUp();
-            $('#tabsdiv.collapsible li.option-list.active').removeClass("active");
+            $('#tabsdiv.collapsible .option-list.active').removeClass("active");
             $(this).addClass("active").find(".collapsible-body").slideDown();
-            $(this).find(".more").hide();
         }
         return false;
     });
@@ -92,7 +100,7 @@ handleScroll = (event) => {
 
 };
 stickymenu = () => {
-    if (window.pageYOffset >= sticky) {
+    if (window.scrollY >= sticky) {
         $("#navbar").addClass("sticky")
     } else {
         $("#navbar").removeClass("sticky");

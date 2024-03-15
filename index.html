@@ -728,8 +728,8 @@
                                                         <p>It takes less than <span>2 minutes</span> to Apply</p>
                                                     </div>
                                 
-                                                <ul class="collapsible documents country-page" id="tabsmodaldiv">
-                                                    <li class="active col s12 m12 l12 white akb-round" id="applyonlinebtn" style="display: block;">
+                                                <diiv class="collapsible documents country-page" id="tabsmodaldiv">
+                                                    <div class="active col s12 m12 l12 white akb-round option-list" id="applyonlinebtn" style="display: block;">
                                                         <div class="collapsible-header" tabindex="0">
                                                             <div class="col l10 m10 s9 right_head">Apply Online</div>
                                                             <div class="col l2 m2 s3">
@@ -750,19 +750,21 @@
                                                                         <label for="mContact_Number" class="label-color">Contact No</label>
                                                                     </div>
                                                                     <div class="input-field col s12 no-margin-bottom select-aria">
-                                                                        <div class="select-wrapper"><input class="select-dropdown dropdown-trigger" type="text" readonly="true" data-target="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe"><ul id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe" class="dropdown-content select-dropdown" tabindex="0"><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe0" tabindex="0" class="selected"><span>Visa type</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe1" tabindex="0"><span>96 Hours Transit Visa</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe2" tabindex="0"><span>14 Days Tourist Visa</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe3" tabindex="0"><span>14 Days Tourist Visa (Express)</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe4" tabindex="0"><span>30 Days Tourist Visa (Popular) </span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe5" tabindex="0"><span>30 Days Tourist Visa (Express)</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe6" tabindex="0"><span>60 Days Tourist Visa</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe7" tabindex="0"><span> 30 Days Multiple Entry Tourist Visa</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe8" tabindex="0"><span>48 Hours Transit Visa</span></li><li id="select-options-70c74467-64c4-18f8-ad01-e58a9c5e57fe9" tabindex="0"><span>60 Days Job Seeker Visa</span></li></ul><svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><select name="visatype" id="visatypemodal" class="validate fixed" required="true" aria-required="true" onchange="handleVisaOnlineChange(event)" tabindex="-1" style="display: inline; height: 0px; padding: 0px; width: 0px;">
-                                                                            <option value="" selected="">Visa type</option>
-                                                                        <option value="1" fare="4299" isinscharge="true">96 Hours Transit Visa</option><option value="2" fare="7799" isinscharge="true">14 Days Tourist Visa</option><option value="3" fare="8799" isinscharge="true">14 Days Tourist Visa (Express)</option><option value="4" fare="7999" isinscharge="true">30 Days Tourist Visa (Popular) </option><option value="5" fare="8999" isinscharge="true">30 Days Tourist Visa (Express)</option><option value="6" fare="13799" isinscharge="true">60 Days Tourist Visa</option><option value="31" fare="15999" isinscharge="false"> 30 Days Multiple Entry Tourist Visa</option><option value="32" fare="2799" isinscharge="false">48 Hours Transit Visa</option><option value="33" fare="16999" isinscharge="false">60 Days Job Seeker Visa</option></select></div>
-                                                                        <input type="hidden" id="visatypenamemodal" name="visatypename">
-                                                                        <input type="hidden" id="visatypeChargemodal" name="visatypeCharge">
-                                                                        <input type="hidden" id="destination2" class="destination" name="destination" value="UNITED ARAB EMIRATES">
-                                                                        <input type="hidden" class="countrycode" name="countrycode" value="AE">
-                                                                        <input type="hidden" class="visautl" name="visautl" value="5341617">
-                                                                        <input type="hidden" class="aui" name="aui" value="333">
-                                                                        <input type="hidden" class="visautm" name="visautm" value="https://www.akbartravels.com/visa/dubai-visa">
+                                                                        <select>
+                                                                            <option value="" disabled selected>Visa Type</option>
+                                                                            <option value="1">96 Hours Transit Visa</option>
+                                                                            <option value="2">14 Days Tourist Visa</option>
+                                                                            <option value="3">14 Days Tourist Visa (Express)</option>
+                                                                            <option value="4">30 Days Tourist Visa (Popular) </option>
+                                                                            <option value="5">30 Days Tourist Visa (Express)</option>
+                                                                            <option value="6">60 Days Tourist Visa</option>
+                                                                            <option value="7"> 30 Days Multiple Entry Tourist Visa</option>
+                                                                            <option value="8">48 Hours Transit Visa</option>
+                                                                            <option value="9">60 Days Job Seeker Visa</option>
+                                                                        </select>
                                                                     </div>
                                                                     <div class="input-field col s12 no-margin-bottom select-aria">
-                                                                        <div class="select-wrapper"><input class="select-dropdown dropdown-trigger" type="text" readonly="true" data-target="select-options-384473ef-4dab-a314-58a4-56128949d426"><ul id="select-options-384473ef-4dab-a314-58a4-56128949d426" class="dropdown-content select-dropdown" tabindex="0"><li id="select-options-384473ef-4dab-a314-58a4-56128949d4260" tabindex="0" class="selected"><span>Travellers</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4261" tabindex="0"><span> 1</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4262" tabindex="0"><span> 2</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4263" tabindex="0"><span> 3</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4264" tabindex="0"><span> 4</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4265" tabindex="0"><span> 5</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4266" tabindex="0"><span> 6</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4267" tabindex="0"><span> 7</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4268" tabindex="0"><span> 8</span></li><li id="select-options-384473ef-4dab-a314-58a4-56128949d4269" tabindex="0"><span> 9</span></li></ul><svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><select name="travellers" id="travellersmodal" class="validate" aria-required="true" required="true" onchange="handleVisaOnlineChange(event)" tabindex="-1" style="display: inline; height: 0px; padding: 0px; width: 0px;">
+                                                                        <select>
                                                                             <option value="" selected="">Travellers</option>
                                                                             <option value="1"> 1</option>
                                                                             <option value="2"> 2</option>
@@ -773,7 +775,7 @@
                                                                             <option value="7"> 7</option>
                                                                             <option value="8"> 8</option>
                                                                             <option value="9"> 9</option>
-                                                                        </select></div>
+                                                                        </select>
                                                                     </div>
                                                                     <div class="input-field col s12 no-margin-bottom">
                                 
@@ -790,8 +792,8 @@
                                                             </form>
                                                             <div class="clearfix"></div>
                                                         </div>
-                                                    </li>
-                                                    <li class="col s12 m12 l12 white akb-round" id="applyenquirybtn">
+                                                    </div>
+                                                    <div class="col s12 m12 l12 white akb-round option-list" id="applyenquirybtn">
                                                         <div class="collapsible-header" tabindex="0">
                                                                 <div class="col l10 m10 s9 right_head">Let us Call you</div>                          <div class="col l2 m2 s3" id="expandmodaldiv">
                                                                 <i class="material-icons right more akb-mrg-none">add</i>
@@ -839,8 +841,8 @@
                                                             
                                                         </div></form>
                                                         <div class="clearfix"></div>
-                                                    </div></li>
-                                                </ul>
+                                                    </div></div>
+                                                </div>
                                             </div>
                                             </div>
                                         </div>

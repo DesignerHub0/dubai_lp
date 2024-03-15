@@ -207,16 +207,16 @@ ul.akb-nav i.right {
 nav.row {
 	margin-bottom: 0 !important;
 }
-#tabsdiv li .more{
+#tabsdiv .more{
 	display: block !important;
 }
-#tabsdiv li .less{
+#tabsdiv .less{
 	display: none !important;
 }
-#tabsdiv li.active .less{
+#tabsdiv .active .less{
 	display: block !important;
 }
-#tabsdiv li.active .more{
+#tabsdiv .active .more{
 	display: none !important;
 }
 .select-wrapper{
