@@ -61,7 +61,7 @@ body{font-family:'Work Sans',sans-serif!important;font-size:14px}
 	text-transform: uppercase;
 	font-size: 15px;
 	border-radius: 25px;
-	background: linear-gradient(225.06deg, #065074 0%, #2ccaff 100%);
+	background: linear-gradient(225.06deg, #b68a35 0%, #92722a 100%);
 	box-shadow: 0 2px 4px 0 #c4d5f6;
 	height: auto !important;
 	padding: 6px 30px !important;
@@ -160,7 +160,7 @@ p {
 /*head top*/
 
 .head-top {
-	background: #C04848;
+	background: #cba344;
 	font-size: 14px;
 	padding: 5px 0;
 	line-height: 1.5;
@@ -193,7 +193,7 @@ ul.akb-nav li a:hover {
 }
 
 ul.akb-nav li.active {
-	background-color: #065074;
+	background-color: #cba344;
 }
 
 ul.akb-nav li.active a {
@@ -795,7 +795,7 @@ nav.row{height:70px}
 
 .visa-enq-row {
 	padding: 8px !important;
-	background: linear-gradient(225.06deg, #065074 0%, #2ccaff 100%);
+	background: linear-gradient(225.06deg, #b68a35 0%, #92722a 100%);
 }
 
 .visa-enq-box-head {
@@ -837,7 +837,7 @@ nav.row{height:70px}
 }
 
 .contact-box {
-	background: #0073ab ;
+	/* background: #0073ab ; */
 	padding: 10px 5% !important;
 	margin-top: 12px;
 }
@@ -4018,7 +4018,7 @@ ol.ser li {
             color: white;
             display: inline-flex;
             align-items: center;
-            background: linear-gradient(86deg, #C04848 0%, #ea4f49 100%);
+            background: linear-gradient(86deg, #cba344 0%, #b68a35 100%);
             border-radius: 47px;
             padding: 13px 16px 13px 71px;
             margin-left: -55px;
