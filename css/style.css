@@ -207,7 +207,21 @@ ul.akb-nav i.right {
 nav.row {
 	margin-bottom: 0 !important;
 }
-
+#tabsdiv li .more{
+	display: block !important;
+}
+#tabsdiv li .less{
+	display: none !important;
+}
+#tabsdiv li.active .less{
+	display: block !important;
+}
+#tabsdiv li.active .more{
+	display: none !important;
+}
+.select-wrapper{
+	height: 45px;
+}
 @media screen and (max-width: 1366px) {
 .akb-l-logo{width:250px}
 }

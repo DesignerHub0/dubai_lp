@@ -8,6 +8,7 @@ $(function(){
     });
 });
 $(document).ready(function () {
+    $('select').formSelect();
     $("#close").click(function () {
         $("#modal1").fadeOut(50);
         $(".modal-overlay").fadeOut(500);
@@ -47,8 +48,33 @@ $(document).ready(function () {
     
         });
     });
+    collapsibleFunction('.faqs-list.collapsible');
+    $('#tabsdiv.collapsible li.option-list').click(function() {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".collapsible-body").slideUp();
+        } else {
+            $(`#tabsdiv.collapsible .collapsible-body`).slideUp();
+            $('#tabsdiv.collapsible li.option-list.active').removeClass("active");
+            $(this).addClass("active").find(".collapsible-body").slideDown();
+            $(this).find(".more").hide();
+        }
+        return false;
+    });
 
 });
+collapsibleFunction = (target) => {
+    $(`${target} > li`).click(function() {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active").find(".collapsible-body").slideUp();
+        } else {
+            $(`${target} .collapsible-body`).slideUp();
+            $(`${target} > li.active`).removeClass("active");
+            $(this).addClass("active").find(".collapsible-body").slideDown();
+            $(this).find(".more").hide();
+        }
+        return false;
+    });
+}
 leadformpos = () => {
     var divpostop = document.getElementById("stickydiv").getBoundingClientRect();
     divpos = divpostop.top + window.scrollY - 79;
